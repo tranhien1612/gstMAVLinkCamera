@@ -4,7 +4,7 @@
 Camera streams video via rtsp/udp
 
 ## Camera Definition
-The camera must enable http server function to send .xml file to QGC (default port: 5000)
+The camera must enable http server function to send .xml file to QGC (default port: 8080)
 
 ## Connection
 The camera connects to QGC via udp connection standard and sends heartbeat message. (Ex: udp:0.0.0.0:14550)
