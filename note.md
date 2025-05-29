@@ -42,6 +42,7 @@ The camera connects to QGC via udp connection standard and sends heartbeat messa
   - The QGC would send the `529` to reset setting of camera.
 
 - Set parram in .xml file by QGC using `PARAM_EXT_SET (323)` message:
-  -  the GCS will send a `323` message with the id, value in .xml file
+  -  the GCS will send a `323` message with the id, value in .xml file and response by `PARAM_EXT_ACK (324)` message.
+  -  `PARAM_EXT_REQUEST_LIST (321)` message is used for request all parameters of this component. All parameters should be emitted in response as `PARAM_EXT_VALUE (322)`.
 
 
