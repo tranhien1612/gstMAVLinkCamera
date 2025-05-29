@@ -40,4 +40,8 @@ The camera connects to QGC via udp connection standard and sends heartbeat messa
   
 - Reset Setting using `MAV_CMD_RESET_CAMERA_SETTINGS (529)` message:
   - The QGC would send the `529` to reset setting of camera.
-  
+
+- Set parram in .xml file by QGC using `PARAM_EXT_SET (323)` message:
+  -  the GCS will send a `323` message with the id, value in .xml file
+
+
